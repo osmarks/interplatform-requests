@@ -17,7 +17,14 @@ data:extend {
 -- Collect generated location names so the technology can unlock them all.
 local interplatform_locations = {}
 
-for name, planet in pairs(data.raw["planet"]) do
+local locations = {}
+
+for name, planet in pairs(data.raw["planet"]) do table.insert(locations, {name, planet}) end
+for name, planet in pairs(data.raw["space-location"]) do table.insert(locations, {name, planet}) end
+
+for _, xs in ipairs(locations) do
+  local name = xs[1]
+  local planet = xs[2]
   local location_name = "interplatform-" .. name
 
   -- Build layered icon: planet background + cargo pod foreground.
