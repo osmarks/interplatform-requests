@@ -2,7 +2,7 @@
 -- Generates one "interplatform-{planet}" space location per planet in
 -- data.raw["planet"], each with a composited cargo-pod + planet icon.
 
-local cargo_pod_icon = "__interplatform-requests__/graphics/icons/interplatform-cargo-pod.png"
+local cargo_pod_icon = "__interplatform-requests-patch__/graphics/icons/interplatform-cargo-pod.png"
 
 -- Custom subgroup so interplatform locations appear on their own row.
 data:extend {
@@ -85,7 +85,7 @@ data:extend {
   {
     type = "technology",
     name = "interplatform-requests",
-    icon = "__interplatform-requests__/graphics/technology/interplatform-requests.png",
+    icon = "__interplatform-requests-patch__/graphics/technology/interplatform-requests.png",
     icon_size = 256,
     essential = true,
     prerequisites = { "space-science-pack" },

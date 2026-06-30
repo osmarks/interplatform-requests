@@ -1,8 +1,8 @@
 {
-  "name": "interplatform-requests",
-  "version": "0.8",
-  "title": "Interplatform Requests",
-  "author": "jacobtruman",
+  "name": "interplatform-requests-patch",
+  "version": "0.9",
+  "title": "Interplatform Requests patch",
+  "author": "osmarks",
   "description": "Adds per-planet interplatform request sources for space platforms, allowing platforms to request items from other platforms orbiting the same planet with conflict prevention",
   "homepage": "https://mods.factorio.com/mod/interplatform-requests",
   "source": "https://github.com/TruCraft/interplatform-requests",
